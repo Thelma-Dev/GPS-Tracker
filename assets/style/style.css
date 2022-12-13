@@ -1,0 +1,41 @@
+
+body {
+    margin: 0;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.overlay {
+    min-height: 100vh;
+    background-color: rgba(115, 115, 116, 0.5);
+}
+
+.marker {
+    background-image: url(../img/pindrop.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+}
+
+.marker i {
+    font-size: 55px;
+    color: blue;
+    text-align: center;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+}
+  
+.mapboxgl-popup-content {
+    text-align: center;
+}
