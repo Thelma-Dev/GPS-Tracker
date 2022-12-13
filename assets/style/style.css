@@ -1,3 +1,7 @@
+:root {
+    --app-dark-bg:#1a1d28;
+}
+
 body {
     margin: 0;
 }
@@ -29,7 +33,7 @@ main {
     min-width: 100%;
     height: 100vh;
     height: calc(var(--vh, 1vh) * 100);
-    background-color: rgba(63, 63, 63, 0.7);
+    background-color: var(--app-dark-bg);
     display: grid;
     place-items: center;
     z-index: 5555;
@@ -41,9 +45,9 @@ main {
 .loader {
     margin-inline: auto;
     border: 3px solid #f3f3f3; 
-    border-top: 3px solid #0000ff;
-    border-right: 3px solid #0000ff;
-    border-bottom: 3px solid #0000ff; 
+    border-top: 3px solid #3898ff;
+    border-right: 3px solid #3898ff;
+    border-bottom: 3px solid #3898ff; 
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -65,25 +69,8 @@ main {
 }
 
 /*---------------------------------------------*/
-/*               Marker                        */
+/*               Mapbox                        */
 /*---------------------------------------------*/
-
-.marker {
-    background-image: url(../img/pindrop.png);
-    background-size: cover;
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-    border-radius: 50%;
-    cursor: pointer;
-    text-align: center;
-}
-
-.marker i {
-    font-size: 55px;
-    color: #0000ff;
-    text-align: center;
-}
 
 .mapboxgl-popup {
     max-width: 200px;

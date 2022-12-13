@@ -20,7 +20,7 @@ const map = new mapboxgl.Map({
     interractive: false,
     center: [0, 0],
     pitch: 40,
-    zoom: 15
+    zoom: 16
 });
 
 map.dragPan.disable();
